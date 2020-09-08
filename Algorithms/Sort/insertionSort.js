@@ -8,11 +8,6 @@ function InsertionSort(arr) {
       j -= 1;
     }
   }
+  return arr;
 }
-
-const arr = Array(10)
-  .fill()
-  .map(() => Math.round(Math.random() * 100));
-console.log("before: ", arr);
-InsertionSort(arr);
-console.log("after:  ", arr);
+module.exports = InsertionSort;

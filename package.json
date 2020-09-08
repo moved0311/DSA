@@ -1,0 +1,14 @@
+{
+  "name": "DSA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:moved0311/DSA.git",
+  "author": "Taiyi <god830311@gmail.com>",
+  "license": "MIT",
+  "scripts" : {
+    "test": "jest" 
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
