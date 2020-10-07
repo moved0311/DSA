@@ -5,10 +5,14 @@
   "repository": "git@github.com:moved0311/DSA.git",
   "author": "Taiyi <god830311@gmail.com>",
   "license": "MIT",
-  "scripts" : {
-    "test": "jest" 
+  "scripts": {
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "split": "^1.0.1",
+    "through": "^2.3.8"
   }
 }
