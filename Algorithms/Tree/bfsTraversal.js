@@ -5,16 +5,13 @@ const bfsTraversal = (root) => {
   while(queue.length !== 0){
     let firstNode = queue.shift();
 
-    if(firstNode.val === null){
-       process.stdout.write("null ")
-    }else{
-        process.stdout.write(firstNode.val.toString()+" "); 
-    }
-    
-    if(firstNode.left !== null){
+    if(firstNode.val)
+      process.stdout.write(firstNode.val+" "); 
+
+    if(firstNode.left) {
       queue.push(firstNode.left);
     }
-    if(firstNode.right!== null){
+    if(firstNode.right) {
       queue.push(firstNode.right);
     }
   }

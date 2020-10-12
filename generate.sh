@@ -23,7 +23,11 @@ const $FILENAME = (n) => {
 }
 
 const main = () => {
-  console.log(input)
+  let readlines = 1;
+  while(input.length > 0){
+    let [num] = input.splice(0, readlines);
+    console.log(num)
+  }
 }
 
 stdInput.on('end', ()=>{

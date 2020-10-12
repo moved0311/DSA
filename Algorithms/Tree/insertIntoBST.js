@@ -1,9 +1,12 @@
+/*
+run code :  node insertIntoBST.js < input/insertIntoBST
+*/
 const fs = require("fs")
 const split = require("split")
 const through = require("through")
-const buildBinaryTree = require("./DataStructure/Tree/buildBinaryTree")
-const bfsTraversal = require("./Algorithms/Tree/bfsTraversal")
-const TreeNode = require("./DataStructure/Tree/Tree")
+const buildBinaryTree = require("../../DataStructure/Tree/buildBinaryTree")
+const bfsTraversal = require("../../Algorithms/Tree/bfsTraversal")
+const TreeNode = require("../../DataStructure/Tree/Tree")
 
 let input = []
 const stdInput = process.stdin.pipe(split())
@@ -19,20 +22,19 @@ const binarySearch = (root, val) => {
   if(root===null){
     /* find null place to insert val */
     return new TreeNode(val);
-  }else{
-    return root;
-  };
+  }
 
   if(val > root.val){ 
     root.right = binarySearch(root.right, val);
   }else{
     root.left = binarySearch(root.left, val)
   }  
+
+  return root;
 }
 const insertIntoBST = (root, val) => {
-  bfsTraversal(root) 
   binarySearch(root, val);
-  console.log(root)
+  bfsTraversal(root) 
 }
 
 const main = () => {
