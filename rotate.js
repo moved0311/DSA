@@ -1,10 +1,3 @@
-#!/bin/sh
-# create default js template 
-# ./generate filename
-
-FILENAME=$1
-
-cat << EOF > $FILENAME.js
 const fs = require("fs")
 const split = require("split")
 const through = require("through")
@@ -18,16 +11,21 @@ stdInput.on('data',(line) =>{
   input.push(JSON.parse(line))
 })
 
-const $FILENAME = (n) => {
-  
+const rotate = (nums, k) => {
+    while(k > 0){
+        lastnum = nums.pop();
+        nums.unshift(lastnum);
+        k -= 1;
+    }
+    return nums
 }
 
 const main = () => {
-  let readlines = 1;
+  let readlines = 2;
   while(input.length > 0){
-    let [num] = input.splice(0, readlines);
-    console.log("input : ", num)
-    console.log("output: ", $FILENAME(num))
+    let [nums, k] = input.splice(0, readlines);
+    console.log("input : ", nums)
+    console.log("output: ", rotate(nums, k))
     console.log("============================")
   }
 }
@@ -37,4 +35,3 @@ stdInput.on('end', ()=>{
 })
 
 /*=======================*/
-EOF

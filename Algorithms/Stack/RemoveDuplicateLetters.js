@@ -32,10 +32,10 @@ const RemoveDuplicateLetters = (s) => {
     
     /* stack is non-empty, stack top > char, stack top is not last one */
     while(!stack.isEmpty() && stack.peek() > char && freq[stack.peek().charCodeAt(0) - 97] > 0){
-      inStack[stack.peek().charCodeAt(0) - 97] = false;
-      stack.pop();
+       inStack[stack.peek().charCodeAt(0) - 97] = false;
+       stack.pop();
     }
-
+            
     stack.push(char);
     inStack[idx] = true;
 
