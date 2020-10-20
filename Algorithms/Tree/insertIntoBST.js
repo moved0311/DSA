@@ -5,7 +5,7 @@ const fs = require("fs")
 const split = require("split")
 const through = require("through")
 const buildBinaryTree = require("../../DataStructure/Tree/buildBinaryTree")
-const bfsTraversal = require("../../Algorithms/Tree/bfsTraversal")
+const bfsPrint= require("../../Algorithms/Tree/bfsPrint")
 const TreeNode = require("../../DataStructure/Tree/Tree")
 
 let input = []
@@ -34,7 +34,7 @@ const binarySearch = (root, val) => {
 }
 const insertIntoBST = (root, val) => {
   binarySearch(root, val);
-  bfsTraversal(root) 
+  bfsPrint(root) 
 }
 
 const main = () => {

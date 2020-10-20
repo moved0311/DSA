@@ -1,6 +1,6 @@
 #!/bin/sh
 # create default js template 
-# ./generate filename
+# ./generate functionName 
 
 FILENAME=$1
 

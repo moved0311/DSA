@@ -1,12 +1,11 @@
-const bfsTraversal = (root) => {
+const bfsPrint= (root) => {
   let queue = []
   queue.push(root)
 
   while(queue.length !== 0){
     let firstNode = queue.shift();
 
-    if(firstNode.val)
-      process.stdout.write(firstNode.val+" "); 
+    process.stdout.write(firstNode.val+" "); 
 
     if(firstNode.left) {
       queue.push(firstNode.left);
@@ -17,4 +16,4 @@ const bfsTraversal = (root) => {
   }
   process.stdout.write("\n")
 }
-module.exports = bfsTraversal;
+module.exports = bfsPrint;

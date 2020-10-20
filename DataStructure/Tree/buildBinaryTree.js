@@ -12,6 +12,7 @@
 */
 const TreeNode = require("./Tree")
 
+// use DFS : root -> left -> right
 const buildBinaryTree = (data, root=null, i=0) => {
   if(i < data.length){
     root  = new TreeNode(data[i]);
