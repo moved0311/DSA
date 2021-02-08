@@ -12,6 +12,9 @@
     "jest": "^26.4.2"
   },
   "dependencies": {
+    "@babel/core": "^7.12.13",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "split": "^1.0.1",
     "through": "^2.3.8"
   }
