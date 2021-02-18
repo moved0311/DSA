@@ -1,34 +1,34 @@
 /*
-* push    : add new element to stack.
-* pop     : remove the top element.
-* peek    : return top element (dosen't remove element).
-* isEmpty : return true if stack is empty else return false. 
-* clear   : clear stack.
-*/
-function Stack(){
-  this.stack= [];
-  
-  this.push = (n) =>{
-    this.stack.push(n)
-  }
-  this.pop = () =>{
+ * push    : add new element to stack.
+ * pop     : remove the top element.
+ * peek    : return top element (dosen't remove element).
+ * isEmpty : return true if stack is empty else return false.
+ * clear   : clear stack.
+ */
+function Stack() {
+  this.stack = [];
+
+  this.push = (n) => {
+    this.stack.push(n);
+  };
+  this.pop = () => {
     return this.stack.pop();
-  }
+  };
   this.peek = () => {
     return this.stack[this.stack.length - 1];
-  }
-  this.isEmpty = () =>{
+  };
+  this.isEmpty = () => {
     return this.stack.length > 0 ? false : true;
-  }
-  this.clear = () =>{
+  };
+  this.clear = () => {
     this.stack = [];
-  }
+  };
   this.size = () => {
     return this.stack.length;
-  }
+  };
   this.print = () => {
-    return this.stack.join('');
-  }
+    console.log(this.stack.join(""));
+  };
 }
 module.exports = Stack;
 /*=================================*/

@@ -1,6 +1,4 @@
 /**
- * leetcode 700. Search in a Binary Search Tree
- *
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
  *     this.val = (val===undefined ? 0 : val)
@@ -13,13 +11,13 @@
  * @param {number} val
  * @return {TreeNode}
  */
-var searchBST = function (root, val) {
+const binarySearchTree = (root, val) => {
   if (root === null || root.val === val) {
     return root;
   } else {
     return val > root.val
-      ? searchBST(root.right, val)
-      : searchBST(root.left, val);
+      ? binarySearchTree(root.right, val)
+      : binarySearchTree(root.left, val);
   }
 };
 
@@ -32,4 +30,4 @@ var searchBST = function (root, val) {
     space: 
         tree node  ---> O(n)
 */
-module.exports = searchBST;
+export default binarySearchTree;

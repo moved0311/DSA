@@ -17,7 +17,7 @@ root.right = new TreeNode(3);
                /           \ 
              2              3
         /       \        /      \
-    null  null  null  null
+     null  null  null  null
 
 root.left.left = new TreeNode(4);
 
@@ -27,7 +27,7 @@ root.left.left = new TreeNode(4);
             /        \         /      \
         4      null  null   null
      /     \
- null  null
+   null  null
 
 console.log(root);
 */
