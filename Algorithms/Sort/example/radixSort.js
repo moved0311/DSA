@@ -1,4 +1,4 @@
-import radixSort from "./Algorithms/Sort/radixSort";
+import radixSort from "../radixSort";
 const arrs = [
   [4, 2, 1, 8, 3, 7, 6, 5],
   [1, 2, 3, 4, 5, 6, 7],
