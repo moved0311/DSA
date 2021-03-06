@@ -11,8 +11,6 @@
   "devDependencies": {},
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "split": "^1.0.1",
-    "through": "^2.3.8"
+    "babel-preset-env": "^1.7.0"
   }
 }
