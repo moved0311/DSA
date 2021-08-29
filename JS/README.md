@@ -4,6 +4,6 @@
 
 ## Run
 
-```js
+```sh
 babel-node .\Algorithms\Tree\example\bfs.js
 ```
