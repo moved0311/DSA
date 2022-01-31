@@ -1,9 +1,14 @@
-## Package
+## Install
 
-- [babel-node](https://www.npmjs.com/package/babel-node)
+```
+yarn install
+```
 
-## Run
+## Test
 
-```sh
-babel-node .\Algorithms\Tree\example\bfs.js
+```
+yarn run dev
+
+// 會執行nodemon ./index.js --exec babel-node
+// 把要執行的function import在index裡面測試
 ```
